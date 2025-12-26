@@ -1,27 +1,20 @@
 name: fangpix
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '14 4/6 * * *'
+    - cron: '55 2/6 * * *'
 
-jobs:  # 21009
+jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - name: fangpix
         env:
-          etd5624: ${{ secrets.etd5624 }}
+          kfw52448: ${{ secrets.kfw52448 }}
         run: |
-          echo $etd5624 | jq -r .m1 | /bin/bash
-          echo $bp20 | jq -r .a01607 | /bin/bash
-          echo $fseno1 | jq -r .a4998 | /bin/bash
-          echo $cvvo015 | jq -r .nfcd389 | /bin/bash
-          echo $bv0 | jq -r .regfj68602 | /bin/bash
-          echo $grm038 | jq -r .mb4 | /bin/bash
-          echo $vo70071 | jq -r .anpu914 | /bin/bash
-          echo $bgqlh673 | jq -r .eq1 | /bin/bash
-          echo $wtdp486 | jq -r .a770 | /bin/bash
-          echo $vim0952 | jq -r .tnp0 | /bin/bash
+          echo $kfw52448 | jq -r .vx3353 | /bin/bash
+          echo $zfd39 | jq -r .oaz40608 | /bin/bash
+          echo $yw916 | jq -r .ba67049 | /bin/bash
 
