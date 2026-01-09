@@ -2,7 +2,7 @@ name: fangpix
 on:
   workflow_dispatch:
   schedule:
-    - cron: '55 2/6 * * *'
+    - cron: '7 3/6 * * *'
 
 jobs:
   build:
@@ -12,9 +12,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: fangpix
         env:
-          kfw52448: ${{ secrets.kfw52448 }}
+          emc2: ${{ secrets.emc2 }}
         run: |
-          echo $kfw52448 | jq -r .vx3353 | /bin/bash
-          echo $zfd39 | jq -r .oaz40608 | /bin/bash
-          echo $yw916 | jq -r .ba67049 | /bin/bash
+          echo $emc2 | jq -r .qvm72 | /bin/bash
+          echo $hr8038 | jq -r .ur9057 | /bin/bash
+          echo $v4 | jq -r .cuu794 | /bin/bash
+          echo $ziwv4 | jq -r .log47578 | /bin/bash
+          echo $mv2397 | jq -r .zpxz533 | /bin/bash
 
